@@ -1,5 +1,7 @@
 # Projeto ROLE
 
+## Trello: https://trello.com/b/4liQorhp/roadmap-de-produto
+
 ## 🛠️ Tecnologias Utilizadas
 - **Java**: Versão 21
 - **Docker**: Para containerização e gerenciamento de ambientes
