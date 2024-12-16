@@ -40,3 +40,9 @@ O projeto ROLE visa criar uma plataforma completa para gerenciar eventos e propo
 - Integração com Docker para facilidade no deploy e consistência do ambiente.
 - Suporte para Java 21, garantindo performance e segurança.
 
+
+# Modelagem de Dominio
+![Classes VLR - Classe UML](https://github.com/user-attachments/assets/89181229-358e-4864-a06d-1bde104ad404)
+
+https://lucid.app/lucidchart/13999e22-9110-4a7a-9526-389561337a2c/edit?viewport_loc=-127%2C25%2C2139%2C1140%2CHWEp-vi-RSFO&invitationId=inv_bdf6fa91-c227-4a1b-860c-07cde3c94e1a
+
