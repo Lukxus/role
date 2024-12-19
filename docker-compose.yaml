@@ -28,12 +28,28 @@ services:
 
   keycloakdb:
     image: postgres:15
+    container_name: keycloakdb
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - keycloak_postgres_data:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: keycloak
       POSTGRES_USER: keycloak
       POSTGRES_PASSWORD: password
+    ports:
+      - 5432:5432
+  
+  appdb:
+    image: postgres:15
+    container_name: appdb
+    volumes:
+      - app_postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: app_database
+      POSTGRES_USER: app_user
+      POSTGRES_PASSWORD: app_password
+    ports:
+      - 5434:5432  
 
 volumes:
-  postgres_data:
+  keycloak_postgres_data:
+  app_postgres_data:
