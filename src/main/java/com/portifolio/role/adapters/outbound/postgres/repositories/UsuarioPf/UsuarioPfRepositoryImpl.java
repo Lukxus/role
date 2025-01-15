@@ -1,6 +1,6 @@
 package com.portifolio.role.adapters.outbound.postgres.repositories.UsuarioPf;
 
-import com.portifolio.role.domain.Usuario.UsuarioPfRepository;
+import com.portifolio.role.domain.UsuarioPf.UsuarioPfRepository;
 import com.portifolio.role.domain.UsuarioPf.UsuarioPf;
 import org.springframework.stereotype.Repository;
 

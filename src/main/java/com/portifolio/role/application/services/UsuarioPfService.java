@@ -1,12 +1,8 @@
 package com.portifolio.role.application.services;
 
-import com.portifolio.role.application.usecases.EventoUseCases;
 import com.portifolio.role.application.usecases.UsuarioPfUseCases;
-import com.portifolio.role.domain.Evento.Evento;
-import com.portifolio.role.domain.Evento.EventoRepository;
-import com.portifolio.role.domain.Usuario.UsuarioPfRepository;
+import com.portifolio.role.domain.UsuarioPf.UsuarioPfRepository;
 import com.portifolio.role.domain.UsuarioPf.UsuarioPf;
-import jdk.jfr.Event;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

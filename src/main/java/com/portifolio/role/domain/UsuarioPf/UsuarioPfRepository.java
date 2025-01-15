@@ -1,6 +1,4 @@
-package com.portifolio.role.domain.Usuario;
-
-import com.portifolio.role.domain.UsuarioPf.UsuarioPf;
+package com.portifolio.role.domain.UsuarioPf;
 
 import java.util.List;
 import java.util.Optional;
