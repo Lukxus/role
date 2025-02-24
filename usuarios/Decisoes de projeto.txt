@@ -12,3 +12,12 @@ Este modulo cria as contas de usuarios tanto dentro da aplicação (compartilhad
 usaremos tambem o liquibase para gerenciamento das versões do banco, e um banco em h2 para realização dos testes.
 
 Usaremos o archUnit e o junit para os testes (validações de arquitetura e testes unitarios/integrados).
+
+
+Considerações inicias sobre a arquitetura - 24/02/2025
+
+Uma decisão a ser feita em cima de nossa arquitetura é o ganho e as perdas ao separarmos itens como nossas controllers e repositorys para cada um dos use cases
+Ao debatermos, decidimos por:
+
+controllers: separadas pois deixamos o codigo mais facil de ser lido e interpretado.
+repository: como ao criar uma specification conseguimos eliminar diversas buscas que poderiamos criar ao longo do caminho, imaginos que a classe não sofra demasiadas alterações nem se torne uma classe extensa em codigo. Assim, decidimos por apenas uma repository por bloco logico de features.
