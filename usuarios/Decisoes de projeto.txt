@@ -1,0 +1,14 @@
+Este modulo, faz parte do projeto ROLE, feitos pelos devs Luiz Otavio e Magno Luiz.
+
+Este modulo é um microsserviço de gerenciamento de usuarios PJ e PF.
+Sua arquitetura para organização e desenvolvimento foi a vertical slice, uma arquitetura focada nos famosos casos de uso.
+Tomamos a decisão do uso desta arquitetura pela facilidade de possiveis alterações e pelo baixo acoplamento. Sendo uma arquitetura de fácil leitura e interpretação.
+
+Iremos usar o TDD, assim todo nosso codigo nascerá já sendo testado.
+Faremos testes unitarios e de integração.
+
+Este modulo cria as contas de usuarios tanto dentro da aplicação (compartilhado com outros modulos) quanto no Keycloack.
+É utilizado um banco relacional postgres para salvar as informações necessarias para esta aplicação.
+usaremos tambem o liquibase para gerenciamento das versões do banco, e um banco em h2 para realização dos testes.
+
+Usaremos o archUnit e o junit para os testes (validações de arquitetura e testes unitarios/integrados).
