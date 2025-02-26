@@ -18,9 +18,17 @@ services:
       KC_LOG_LEVEL: info
       KC_METRICS_ENABLED: true
       KC_HEALTH_ENABLED: true
+
+      # Configuração do usuário admin
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
-    command: start-dev
+
+      # Variável para informar o caminho do arquivo a ser importado
+      KC_IMPORT: /opt/keycloak/data/import/realm-config.json
+    command: start-dev --import-realm
+    volumes:
+      # Monta o arquivo local de configuração no diretório de importação do container
+      - ./realm-config.json:/opt/keycloak/data/import/realm-config.json
     depends_on:
       - keycloakdb
     ports:

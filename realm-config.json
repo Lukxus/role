@@ -1,0 +1,53 @@
+{
+  "realm": "ROLE",
+  "enabled": true,
+  "displayName": "ROLE",
+  "sslRequired": "none",
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "duplicateEmailsAllowed": false,
+  "resetPasswordAllowed": true,
+  "editUsernameAllowed": false,
+  "roles": {
+    "realm": [
+      {
+        "name": "user-pf",
+        "description": "Role padrão para usuários pf"
+      },
+      {
+        "name": "user-pj",
+        "description": "Role padrão para usuários pf"
+      },
+      {
+        "name": "admin",
+        "description": "Role de administrador"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "account",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "publicClient": true,
+      "redirectUris": []
+    },
+    {
+      "clientId": "role-app",
+      "name": "user-role",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "publicClient": false,
+      "secret": "secret-value",
+      "redirectUris": [
+        "http://localhost:3000/*"
+      ],
+      "webOrigins": [
+        "http://localhost:3000"
+      ],
+      "attributes": {
+        "post.logout.redirect.uris": "http://localhost:3000"
+      }
+    }
+  ]
+}
